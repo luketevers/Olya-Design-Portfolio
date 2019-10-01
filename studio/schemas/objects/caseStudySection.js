@@ -38,7 +38,7 @@ export default {
           title: 'Tiles',
           name: 'tiles',
           type: 'array',
-          of: [
+          to: [
             {
               title: 'Image',
               name: 'image',
