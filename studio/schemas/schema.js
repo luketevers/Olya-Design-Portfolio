@@ -11,6 +11,7 @@ import resume from './documents/resume'
 
 // Object types
 import basicButton from './objects/basicButton'
+import caseStudySection from './objects/caseStudySection'
 import bioPortableText from './objects/bioPortableText'
 import iconItem from './objects/iconItem'
 import mainImage from './objects/mainImage'
@@ -34,6 +35,7 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     basicButton,
     bioPortableText,
+    caseStudySection,
     iconItem,
     mainImage,
     resumeItem,
