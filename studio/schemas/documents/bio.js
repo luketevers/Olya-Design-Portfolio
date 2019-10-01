@@ -35,12 +35,14 @@ export default {
     {
       name: 'socialMediaBar',
       title: 'Social Media',
-      type: 'iconBar'
+      type: 'array',
+      of: [{type: 'iconItem'}]
     },
     {
       name: 'contactBar',
       title: 'Contact Bar',
-      type: 'iconBar'
+      type: 'array',
+      of: [{type: 'iconItem'}]
     }
   ],
   preview: {

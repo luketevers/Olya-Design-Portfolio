@@ -1,8 +1,8 @@
 export default {
-  name: 'iconBar',
-  type: 'array',
-  title: 'Icon Bar',
-  of: [
+  name: 'iconItem',
+  type: 'object',
+  title: 'Icon Item',
+  fields: [
     {
       title: 'Label',
       name: 'label',
