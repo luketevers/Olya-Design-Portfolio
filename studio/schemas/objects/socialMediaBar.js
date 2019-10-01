@@ -1,7 +1,7 @@
 export default {
   name: 'socialMediaBar',
-  type: 'array',
   title: 'Social Media Bar',
+  type: 'array',
   of: [
     {
       title: 'Label',
