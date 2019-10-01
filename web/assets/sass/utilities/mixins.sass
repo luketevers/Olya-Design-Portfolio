@@ -1,0 +1,11 @@
+// --------------------------------------------------------
+// imports
+// --------------------------------------------------------
+@import './mixins/responsive-text.sass'
+@import './mixins/hamburgers.sass'
+
+@mixin social-bg($color)
+  background: $color
+
+  &:hover
+    background: darken($color, 10%)

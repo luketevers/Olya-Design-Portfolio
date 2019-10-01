@@ -1,0 +1,45 @@
+// --------------------------------------------------------
+// Clearfix
+// --------------------------------------------------------
+
+.clearfix
+  &:after,
+  &:before
+    display: table
+    clear: both
+    content: ''
+
+// --------------------------------------------------------
+// Container Classes
+// --------------------------------------------------------
+
+.container
+  @include desktop-lg
+    max-width: $width-large
+  @include tablet
+    flex-direction: column
+  @include phone
+    padding: 0 1rem
+  display: flex
+  position: relative
+  margin: 0 auto
+  padding: 0 calc(#{$outside-gutter} / 2)
+  width: 100%
+  max-width: calc(#{$width} + #{$outside-gutter})
+
+  &--block
+    @extend .clearfix
+    display: block
+
+.container-lg
+  @include desktop-lg
+    max-width: $max-width
+  display: flex
+  margin: 0 auto
+  padding: 0 calc(#{$outside-gutter} / 2)
+  width: 100%
+  max-width: calc(#{$width-large} + #{$outside-gutter})
+
+  &--block
+    @extend .clearfix
+    display: block

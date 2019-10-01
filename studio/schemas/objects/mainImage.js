@@ -3,9 +3,6 @@ export default {
   title: 'Image',
   type: 'image',
   description: 'Used for social media previews etc. Upload the highest possible resolution.',
-  options: {
-    hotspot: true
-  },
   fields: [
     {
       title: 'Caption',

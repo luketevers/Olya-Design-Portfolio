@@ -1,0 +1,71 @@
+.button
+  &--consult
+    @include tablet
+      max-width: 258px
+      font-size: 14px
+    @include phone-landscape
+      max-width: 258px
+      font-size: 14px
+    display: block
+    transition: background .2s ease, color .2s ease
+    border: 1px solid $white
+    background: transparent
+    cursor: pointer
+    padding: rem-calc(13) 0 rem-calc(10)
+    max-width: 286px
+    text-align: center
+    letter-spacing: 1px
+    font-family: $empire
+
+    &:hover
+      background: $white
+      color: $black
+
+  &--submit
+    display: block
+    transition: background .2s ease, color .2s ease
+    border: 1px solid $white
+    background: transparent
+    cursor: pointer
+    padding: rem-calc(13) 0 rem-calc(10)
+    width: 100%
+    max-width: rem-calc(120)
+    text-align: center
+    letter-spacing: 1px
+    color: $white
+    font-family: $empire
+
+    &:hover
+      background: $white
+      color: $black
+
+.arrows
+  display: flex
+  justify-content: space-between
+  max-width: rem-calc(90)
+
+.arrow
+  transition: background .2s ease
+  border: 1px solid $white
+  cursor: pointer
+  padding: rem-calc(8) rem-calc(14)
+  width: 40px
+  height: 40px
+
+  &:hover
+    background: $white
+
+    .next-icon,
+    .prev-icon
+      fill: $black
+
+.next-icon
+  transition: fill .2s ease
+  height: 100%
+  fill: $white
+
+.prev-icon
+  transform: rotateY(180deg)
+  transition: fill .2s ease
+  height: 100%
+  fill: $white

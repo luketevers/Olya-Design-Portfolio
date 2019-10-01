@@ -1,0 +1,55 @@
+// -------------------------------------
+// Fades
+// -------------------------------------
+
+.fade
+  &-enter-active,
+  &-leave-active
+    transition: opacity .35s ease-in-out
+
+  &-enter,
+  &-leave-to
+    opacity: 0
+
+.hero-fade
+  &-enter-active,
+  &-leave-active
+    transition: opacity .55s ease-in-out
+
+  &-enter,
+  &-leave-to
+    opacity: 0
+
+
+.crossfade
+  backface-visibility: hidden
+
+  &-enter-active
+    transition: opacity .55s ease-in
+
+  &-leave-active
+    transition: opacity .5s ease-in .05s
+
+  &-enter,
+  &-leave-to
+    opacity: 0
+
+// -------------------------------------
+// Slides
+// -------------------------------------
+
+.drawer-slide
+  backface-visibility: hidden
+
+  &-enter-active
+    transition: transform .55s cubic-bezier(.39, .575, .28, .995)
+  &-leave-active
+    transition: transform .55s ease-in-out
+
+  &-enter,
+  &-leave-to
+    transform: translateX(-100%)
+
+// -------------------------------------
+// Project transitions
+// -------------------------------------

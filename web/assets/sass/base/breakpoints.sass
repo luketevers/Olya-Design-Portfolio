@@ -1,0 +1,39 @@
+@mixin desktop-lg
+  @media screen and (min-width: #{$screen-xl})
+    @content
+
+@mixin desktop
+  @media screen and (max-width: #{$screen-lg})
+    @content
+
+@mixin desktop-short
+  @media screen and (max-height: 650px) and (min-width: #{$screen-xs})
+    @content
+
+@mixin ipad-pro
+  @media screen and (min-height: 1320px) and (max-width: #{$screen-md})
+    @content
+
+@mixin tablet-lg
+  @media screen and (max-width: #{$screen-md})
+    @content
+
+@mixin tablet
+  @media screen and (min-height: 481px) and (max-width: #{$screen-sm})
+    @content
+
+@mixin phone
+  @media screen and (max-width: #{$screen-xs})
+    @content
+
+@mixin phone-landscape
+  @media screen and (max-height: #{$screen-xs}) and (max-width: 850px)
+    @content
+
+@mixin phone-sm
+  @media screen and (max-width: 360px)
+    @content
+
+@mixin phone-sm-landscape
+  @media screen and (max-height: 360px) and (max-width: 700px)
+    @content

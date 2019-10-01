@@ -1,0 +1,117 @@
+// --- basic fades/slides
+@mixin fades($translate-y-from, $translate-x-from, $translate-y-to, $translate-x-to, $animation)
+  @keyframes #{$animation}
+    from
+      transform: translate($translate-y-from, $translate-x-from)
+      opacity: 0
+    100%
+      transform: translate($translate-y-to, $translate-x-to)
+      opacity: 1
+
+@keyframes slide-down
+  0%
+    transform: translateY(-100%)
+  100%
+    transform: translateY(0)
+
+// --- Bounce Effects
+
+@keyframes funFaded
+  // summers ortho patient after photos
+  0%
+    transform: translateY(12%) scale(.75)
+    opacity: 0
+  75%
+    transform: scale(1.05)
+  85%
+    opacity: 1
+  100%
+    transform: translateY(0) scale(1)
+    opacity: 1
+
+// --- Modal Effects
+
+@keyframes modal-zoom
+  from
+    transform: scaleX(0) scaleY(.005)
+    opacity: 0
+  25%
+    transform: scaleX(0) scaleY(.005)
+    opacity: 1
+  50%
+    transform: scaleX(1) scaleY(.005)
+    opacity: 1
+  100%
+    transform: scaleX(1) scaleY(1)
+    opacity: 1
+
+
+// --- Project @keyframes
+
+@media screen and (min-width: $screen-xs - 1)
+  @keyframes slide-out
+    0%
+      width: 0
+    100%
+      width: 100%
+
+@media screen and (max-width: $screen-xs)
+  @keyframes slide-out
+    0%
+      width: 90%
+    100%
+      width: 100%
+
+@keyframes social-slide-out
+  0%
+    transform: translateX(-100%)
+    opacity: 0
+  75%
+    transform: translateX(0)
+  100%
+    transform: translateX(0)
+    opacity: 1
+
+@keyframes fade-in-up
+  0%
+    transform: translateY(2rem)
+    opacity: 0
+  100%
+    transform: translateY(0)
+    opacity: 1
+
+@keyframes fade-in-up-small
+  0%
+    transform: translateY(1rem)
+    opacity: 0
+  100%
+    transform: translateY(0)
+    opacity: 1
+
+@keyframes fade-in-left
+  0%
+    transform: translateX(-1rem)
+    opacity: 0
+  80%
+    opacity: 1
+  100%
+    transform: translateY(0)
+    opacity: 1
+
+@keyframes fade-in
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes image-animation
+  0%
+    transform: translateX(-3rem)
+    opacity: 0
+    clip-path: polygon(0 0, 20% 0, 20% 100%, 0 100%)
+  60%
+    opacity: 1
+  100%
+    transform: translateX(0)
+    opacity: 1
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)

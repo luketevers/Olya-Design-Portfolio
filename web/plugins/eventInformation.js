@@ -1,5 +1,5 @@
-import sanityClient from '~/sanityClient'
 import { addMinutes } from 'date-fns'
+import sanityClient from '~/sanityClient'
 
 const query = `{
   "eventInformation": *[_id == "eventInformation"][0],
