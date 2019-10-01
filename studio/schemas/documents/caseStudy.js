@@ -38,7 +38,7 @@ export default {
       title: 'Challenge Items',
       name: 'challengeItems',
       type: 'array',
-      to: [
+      of: [
         {
           type: 'titleText'
         }
@@ -65,7 +65,7 @@ export default {
       title: 'Steps',
       name: 'steps',
       type: 'array',
-      to: [{type: 'caseStudySection'}]
+      of: [{type: 'caseStudySection'}]
     },
     {
       title: 'Mobile Gallery',
@@ -101,7 +101,7 @@ export default {
       title: 'Keywords',
       type: 'array',
       description: 'Add keywords that describes the case study.',
-      to: [
+      of: [
         {
           type: 'string'
         }

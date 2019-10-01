@@ -22,7 +22,7 @@ export default {
       title: 'Section',
       name: 'section',
       type: 'array',
-      to: [
+      of: [
         {
           title: 'Subtitle',
           name: 'subtitle',
@@ -38,7 +38,7 @@ export default {
           title: 'Tiles',
           name: 'tiles',
           type: 'array',
-          to: [
+          of: [
             {
               title: 'Image',
               name: 'image',
