@@ -35,12 +35,12 @@ export default {
     {
       name: 'socialMediaBar',
       title: 'Social Media',
-      type: 'socialMediaBar'
+      type: 'iconBar'
     },
     {
       name: 'contactBar',
       title: 'Contact Bar',
-      type: 'contactBar'
+      type: 'iconBar'
     }
   ],
   preview: {

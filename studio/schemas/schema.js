@@ -12,10 +12,9 @@ import resume from './documents/resume'
 // Object types
 import basicButton from './objects/basicButton'
 import bioPortableText from './objects/bioPortableText'
-import contactBar from './objects/contactBar'
+import iconBar from './objects/iconBar'
 import mainImage from './objects/mainImage'
 import resumeItem from './objects/resumeItem'
-import socialMediaBar from './objects/socialMediaBar'
 import titleText from './objects/titleText'
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -35,10 +34,9 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     basicButton,
     bioPortableText,
-    contactBar,
+    iconBar,
     mainImage,
     resumeItem,
-    socialMediaBar,
     titleText
   ])
 })

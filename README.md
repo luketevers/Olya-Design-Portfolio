@@ -6,7 +6,7 @@ Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-i
 
 ## What you have
 
-- An event page with [Nuxt.js](https://nuxtjs.org/)
+- A Portfolio page with [Nuxt.js](https://nuxtjs.org/)
 - Structured content using [Sanity.io](https://www.sanity.io)
 - Global deployment on [Netlify](https://netlify.com)
 

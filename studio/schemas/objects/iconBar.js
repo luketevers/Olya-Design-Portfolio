@@ -1,7 +1,7 @@
 export default {
-  name: 'contactBar',
+  name: 'iconBar',
   type: 'array',
-  title: 'Contact Bar',
+  title: 'Icon Bar',
   of: [
     {
       title: 'Label',
