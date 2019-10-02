@@ -6,19 +6,19 @@ export const state = () => ({
 })
 
 export const getters = {
-  eventInformation(state) {
+  eventInformation (state) {
     return state.eventInformation
   },
-  getProgram(state) {
+  getProgram (state) {
     return state.program
   }
 }
 
 export const mutations = {
-  setEventInformation(state, info) {
+  setEventInformation (state, info) {
     state.eventInformation = info
   },
-  setProgram(state, program) {
+  setProgram (state, program) {
     state.program = program
   }
 }

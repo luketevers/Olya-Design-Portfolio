@@ -1,5 +1,6 @@
 <template lang='pug'>
   section
+    pre {{ info }}
 </template>
 
 <script>
@@ -7,22 +8,22 @@ import sanityClient from '../sanityClient'
 
 const query = `
   {
-    "info": *[_id == "eventInformation"] {
-      ..., image { ..., asset->}
-    }[0]
+    "info": *[_type == "caseStudy"] {
+      ...
+    }
   }
 `
 
 export default {
-  data() {
+  data () {
     return {
       program: this.$store.getters.getProgram
     }
   },
-  asyncData() {
+  asyncData () {
     return sanityClient.fetch(query)
   },
-  head() {
+  head () {
     if (!this || !this.info) {
       return
     }
@@ -32,12 +33,10 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.info.description
         },
         {
           hid: 'keywords',
           name: 'keywords',
-          content: this.info.keywords.join(',')
         }
       ]
     }
