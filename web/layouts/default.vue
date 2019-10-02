@@ -1,6 +1,7 @@
-<template lang='pug'>
-  div
-    nuxt
+<template>
+  <div>
+    <nuxt />
+  </div>
 </template>
 
 <script>
@@ -10,3 +11,6 @@ export default {
   }
 }
 </script>
+
+<style>
+</style>
