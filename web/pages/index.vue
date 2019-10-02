@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import { dateFilter } from 'vue-date-fns'
-
 import sanityClient from '../sanityClient'
 
 const query = `
@@ -16,11 +14,6 @@ const query = `
 `
 
 export default {
-  components: {
-  },
-  filters: {
-    dateFilter
-  },
   data() {
     return {
       program: this.$store.getters.getProgram
@@ -51,5 +44,3 @@ export default {
   }
 }
 </script>
-
-<style scoped></style>

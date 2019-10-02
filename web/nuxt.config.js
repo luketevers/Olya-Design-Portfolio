@@ -38,7 +38,13 @@ export default {
     './resources/mixins',
     './resources/vendors'
   ],
-
+  /*
+  ** Nuxt.js dev-modules
+  */
+  devModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module'
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -84,25 +90,6 @@ export default {
    ** Build configuration
    */
   build: {
-    postcss: {
-      plugins: {
-        'postcss-import': {},
-        'postcss-preset-env': {
-          stage: 3,
-          features: {
-            'color-mod-function': { unresolved: 'warn' },
-            'nesting-rules': true,
-            'custom-media-queries': {
-              preserve: false
-            },
-            'custom-properties': {
-              preserve: false
-            }
-          }
-        }
-      }
-    },
-
     /*
      ** You can extend webpack config here
      */
