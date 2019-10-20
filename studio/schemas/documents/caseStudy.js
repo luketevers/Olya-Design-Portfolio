@@ -49,16 +49,8 @@ export default {
       name: 'howMightWe',
       type: 'object',
       fields: [
-        {
-          title: 'Image',
-          name: 'image',
-          type: 'image'
-        },
-        {
-          title: 'Body',
-          name: 'body',
-          type: 'text'
-        }
+        {title: 'Image', name: 'image', type: 'image'},
+        {title: 'Body', name: 'body', type: 'text'}
       ]
     },
     {

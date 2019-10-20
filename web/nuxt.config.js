@@ -9,7 +9,7 @@ const routesQuery = `
 `
 
 export default {
-  mode: 'univeral',
+  mode: 'universal',
 
   /*
    ** Headers of the page
